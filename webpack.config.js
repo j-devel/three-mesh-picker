@@ -12,7 +12,6 @@ let libraryName = pkg.name;
 let libraryObjName = 'MeshPicker'; // name for window.MeshPicker via script tag loading
 
 let plugins = [], outputFile;
-
 if (env === 'build') {
     plugins.push(new UglifyJsPlugin({ minimize: true }));
     outputFile = libraryName + '.min.js';
