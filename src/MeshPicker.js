@@ -3,7 +3,7 @@
 // https://threejs.org/docs/#manual/introduction/Import-via-modules
 import * as THREE from 'three';
 
-export default class MeshPicker {
+class MeshPicker {
     constructor(width, height, opts={}) {
         if (width === undefined || height === undefined) {
             throw 'error: both viewport width and height must be provided.';
@@ -316,3 +316,4 @@ export default class MeshPicker {
         console.log('this._mapUuidIdx:', this._mapUuidIdx);
     }
 }
+export default MeshPicker;

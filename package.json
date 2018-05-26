@@ -2,7 +2,7 @@
     "name": "three-mesh-picker",
     "version": "1.0.0",
     "description": "A support library for gpu-picking three.js mesh objects.",
-    "main": "lib/three-mesh-picker.js",
+    "main": "dist/three-mesh-picker.js",
     "scripts": {
         "dist": "npm run build && rm -rf ./dist && cp -r ./lib ./dist",
         "build": "webpack --env dev && webpack --env build && npm run test",
