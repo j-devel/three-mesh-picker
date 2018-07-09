@@ -1,7 +1,8 @@
-'use strict';
-
-// https://threejs.org/docs/#manual/introduction/Import-via-modules
-import * as THREE from 'three';
+// if THREE is global (via script tag loading), use that THREE to prevent
+// conflicts with ES6 version...
+import * as THREE_ES6 from 'three';
+console.log('window.THREE:', window.THREE);
+const THREE = window.THREE ? window.THREE : THREE_ES6;
 
 class MeshPicker {
     constructor(width, height, opts={}) {
